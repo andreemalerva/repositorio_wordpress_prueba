@@ -237,3 +237,116 @@ nav .contact:hover {
     width: 24px;
     height: 24px;
 }
+
+@media screen and (max-width: 1280px) {
+    .detalles {
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .buttons a.comprar {
+        padding: 10px 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .detalles h4 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .detalles p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .precio {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .productos {
+        padding: 1rem 1rem 3rem;
+    }
+
+    .productos h2 {
+        padding-bottom: 2rem;
+    }
+
+    .detalles h4 {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .detalles p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .precio {
+        font-size: 1.5rem;
+    }
+    .buttons a.comprar {
+        padding: 8px 40px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .btn-redes-sociales {
+        z-index: 1000;
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        transition: all 300ms ease 0ms;
+        cursor: pointer;
+        margin: 0 0 0.8rem;
+    }
+    .btn-redes-sociales a {
+        background-color: var(--color3);
+        border: 2px solid var(--color6);
+        width: 45px;
+        height: 45px;
+    }
+    nav .contact {
+        padding: 5px 15px;
+        font-size: 18px;
+        line-height: 24px;
+        width: 150px;
+    }
+    .productos {
+        padding: 0 1rem 1rem;
+    }
+    
+    .productos h2 {
+        padding-bottom: 1rem;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .detalles {
+        padding: 2rem 0;
+    }
+
+    .detalles p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .buttons.comprar {
+        font-size: 22px;
+        line-height: 24px;
+    }
+}
