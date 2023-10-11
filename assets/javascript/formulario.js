@@ -4,14 +4,14 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.20.0
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCyWpB-1fClB5IMRlUiRmTDlubx3z6YYw0",
-    authDomain: "productos-digitales-wordpress.firebaseapp.com",
-    databaseURL: "https://productos-digitales-wordpress-default-rtdb.firebaseio.com",
-    projectId: "productos-digitales-wordpress",
-    storageBucket: "productos-digitales-wordpress.appspot.com",
-    messagingSenderId: "549012156361",
-    appId: "1:549012156361:web:a197dc8475a36449420218"
-  };
+  apiKey: "AIzaSyCyWpB-1fClB5IMRlUiRmTDlubx3z6YYw0",
+  authDomain: "productos-digitales-wordpress.firebaseapp.com",
+  databaseURL: "https://productos-digitales-wordpress-default-rtdb.firebaseio.com",
+  projectId: "productos-digitales-wordpress",
+  storageBucket: "productos-digitales-wordpress.appspot.com",
+  messagingSenderId: "549012156361",
+  appId: "1:549012156361:web:a197dc8475a36449420218"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

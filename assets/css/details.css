@@ -291,6 +291,7 @@ nav .contact:hover {
     .precio {
         font-size: 1.5rem;
     }
+
     .buttons a.comprar {
         padding: 8px 40px;
     }
@@ -306,22 +307,25 @@ nav .contact:hover {
         cursor: pointer;
         margin: 0 0 0.8rem;
     }
+
     .btn-redes-sociales a {
         background-color: var(--color3);
         border: 2px solid var(--color6);
         width: 45px;
         height: 45px;
     }
+
     nav .contact {
         padding: 5px 15px;
         font-size: 18px;
         line-height: 24px;
         width: 150px;
     }
+
     .productos {
         padding: 0 1rem 1rem;
     }
-    
+
     .productos h2 {
         padding-bottom: 1rem;
     }
