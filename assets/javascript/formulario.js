@@ -31,7 +31,7 @@ sendClick.addEventListener("click", function (e) {
     const telInput = document.getElementById('telInput').value;
     writeUserData(nameLast, correoInput, telInput);
   } else {
-    alert('Llena formulario')
+    /* alert('Llena formulario'); */
   }
 });
 
@@ -56,7 +56,7 @@ function writeUserData(nameLast, correoInput, telInput) {
 
 function showForm() {
   const formData = document.getElementById('formSend');
-  formData.submit();
+  formData.reset();
 }
 
 function validarFormulario(form) {
