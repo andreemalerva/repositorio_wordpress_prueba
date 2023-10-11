@@ -8,28 +8,17 @@
     --rojo: hsla(0, 100%, 50%, 1);
     --white: #fff;
     --color1: #7A68CB;
-    --color-one: #5bb7b6;
-    --color-two: #feffd6;
-    --color-three: #e85a50;
-    --color-four: #fdf37a;
-    --color-five: #fff;
-
+    --color2: #6D1E68;
+    --color3: #e85a50;
+    --color4: #fdf37a;
+    --color6: #5bb7b6;
+    
     --black: #000000;
     --black-light: #010002;
     --black-light-two: #2A2B2F;
     --black-light-three: #454F59;
-    --console-red: #FD5D55;
-    --console-yellow: #FFBF2F;
-    --console-green: #27C93D;
-    --console-white: #E9EEF2;
-    --blue-tur: #326789;
-    --blue-light: #5bb7b6;
-   
-    --color-gray: #D9D9D9;
-    
+        
     --font-courier: 'Courier Prime', monospace;
-    --font-monserrat: 'Montserrat', sans-serif;
-    --font-lato:'Lato', sans-serif;
 }
 
 body {
@@ -37,10 +26,8 @@ body {
     padding: 0;
 }
 
-main,
-section {
+main, .section3 {
     height: 100vh;
-    
 }
 
 .contenido-centrado {
@@ -48,12 +35,6 @@ section {
     justify-content: center;
     align-items: center;
 }
-
-/* section:nth-child(2){
-    background: #FEAC5E; 
-    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  
-    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); 
-} */
 
 .parallax{
 	background-attachment: fixed;
@@ -154,6 +135,132 @@ section {
     }
 }
 
+.productos{
+    padding: 2rem 1rem 3rem;
+}
+
+.productos h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--font1);
+    color: var(--white);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #fff !important;
+    margin: 1rem;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.card_one {
+    padding: 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+}
+.card_one .images-top {
+    background-color: var(--color2);
+}
+
+.card_one .card-img-top {
+    object-fit: contain;
+    height: 160px;
+}
+
+.card_one .card-body {
+    min-height: 210px;
+    height: 100%;
+    border-radius: 0 0 8px 8px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.362);
+}
+
+.card_one .card-body .details {
+    min-height: 130px;
+    width: 100%;
+}
+
+.card_one .card-body .details h4 {
+    font-family: var(--font-courier);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--black);
+}
+
+.card_one .card-body .details p {
+    font-family: var(--font2);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.card_one .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card_one .buttons a.showDemo {
+    border-radius: 4px;
+    background-color: var(--color1);
+    padding-block: 9px;
+    border: 1px solid var(--color1);
+    font-family: var(--font-courier);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.card_one .buttons a.showDemo:hover {
+    border: 1px solid var(--color2);
+    background-color: var(--color2);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.card_one .buttons a.detalles {
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--color6);
+    font-family: var(--font-courier);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.card_one .buttons a.detalles:hover {
+    text-decoration: none;
+    background-color: var(--color6);
+    color: var(--white);
+}
+
 .caja-interior{
     left: 10%;
     position: absolute; 
@@ -194,12 +301,11 @@ section {
 .card-form form label {
     font-family: var(--font2);
     font-size: 1rem;
-    padding-bottom: 5px;
+    margin-bottom: 0.2rem;
 }
 
 .card-form form input {
     padding: 5px 10px;
-    height: 15px;
     font-family: var(--font2);
     font-size: 0.8rem;
 }
@@ -211,136 +317,91 @@ section {
     font-family: var(--font2);
     font-size: 1rem;
     font-weight: 600;
-    color: #fff;
+    color: var(--white);
     background-color: var(--color1);
     border-radius: 15px;
     border: 1px solid var(--color1);
 }
 
-.productos{
-    padding: 2rem 1rem;
-}
-
-.productos h2{
-    text-align: center;
-    font-size: 2.5rem;
+.msg .flag {
+    border-radius: 10px;
     font-family: var(--font1);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
     color: var(--white);
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.msg .flag.error {
+    border: 3px solid #FF0000;
+    background-color: #E86F6F;
 }
 
-.card {
-    background-color: #fff !important;
-    border: none !important;
-    margin: 1rem;
+.msg .flag.success {
+    border: 2px solid #009021;
+    background-color: #51B368;
 }
 
-.card_one {
-    padding: 0;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    background: rgb(255, 255, 255);
-}
-
-.card_one .card-img-top {
-    border: 1px solid var(--blue-light);
-    border-radius: 8px;
-}
-
-.card_one .card-body {
-    min-height: 210px;
-    height: 100%;
-    border-radius: 0 0 8px 8px;
-    background: rgb(255, 255, 255);
-    border: 1px solid rgba(255, 255, 255, 0.362);
-}
-
-.card_one .card-body .details {
-    min-height: 130px;
-    width: 100%;
-}
-
-.card_one .card-body .details h4 {
-    font-family: var(--font-courier);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    color: var(--black);
-}
-
-.card_one .card-body .details p {
-    font-family: var(--font-lato);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--black);
-}
-
-.card_one .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.card_one .buttons a.showDemo {
-    border-radius: 4px;
-    background-color: var(--color-four);
-    padding-block: 9px;
-    border: 1px solid var(--color-four);
-    font-family: var(--font-courier);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--black-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-
-.card_one .buttons a.showDemo:hover {
-    border: 1px solid var(--color-three);
-    background-color: var(--color-three);
-    color: var(--color-five);
-    text-decoration: none;
-}
-
-.card_one .buttons a.gitlab {
-    border-radius: 4px;
-    background-color: transparent;
-    border: 1px solid var(--blue-light);
-    font-family: var(--font-courier);
+.avisodeprivacidad {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--black-light);
+    font-size: 12px;
+    line-height: 12px;
+    background-color: var(--color1);
+    color: var(--white);
+}
+
+.avisodeprivacidad p {
+    color: var(--color4);
+    font-family: var(--font-courier);
+    font-size: .8rem;
+}
+
+.avisodeprivacidad a {
+    font-family: var(--font1);
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.avisodeprivacidad a:hover {
+    color: var(--color4);
+    font-weight: 800;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.btn-redes-sociales {
+    z-index: 1000;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    cursor: pointer;
+}
+
+.btn-redes-sociales a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color2);
+    border: 2px solid var(--black-light-three);
+    margin: 0 0 1rem;
     cursor: pointer;
-    padding: 10px 0;
-    width: 100%;
 }
 
-.card_one .buttons a.gitlab:hover {
-    text-decoration: none;
-    background-color: var(--blue-light);
-    color: var(--color-five);
+.btn-redes-sociales a:hover {
+    transform: translateY(-7px);
+    background-color: var(--color1);
+    border: 2px solid var(--black-light-three);
 }
 
-.card_one .buttons a.gitlab img {
-    height: 24px;
+.btn-redes-sociales a img {
     width: 24px;
+    height: 24px;
 }
-
